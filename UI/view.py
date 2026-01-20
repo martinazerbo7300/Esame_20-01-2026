@@ -52,6 +52,8 @@ class View:
         self._page.controls.append(self.txt_result)
         self._page.update()
 
+
+
     @property
     def controller(self):
         return self._controller
@@ -70,6 +72,7 @@ class View:
         dlg = ft.AlertDialog(title=ft.Text(message))
         self._page.open(dlg)
         self._page.update()
+
 
     def update_page(self):
         self._page.update()
